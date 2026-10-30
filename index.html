@@ -1,353 +1,434 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<!doctype html>
+<html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta content="IE=edge" http-equiv="X-UA-Compatible">
-  <meta content="width=device-width,initial-scale=1" name="viewport">
-  <meta content="description" name="description">
-  <meta name="google" content="notranslate" />
-  <meta content="Mashup templates have been developped by Orson.io team" name="author">
-
-  <!-- Disable tap highlight on IE -->
-  <meta name="msapplication-tap-highlight" content="no">
-
-  <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-icon-180x180.png">
-  <link href="assets/icons/favicon.png" rel="icon">
-
-  <title>Edgar Mancilla</title>
-
-  <link href="./main.d8e0d294.css" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Edgar Mancilla · Portafolio</title>
+  <meta name="description" content="Edgar Jesús Mancilla Gutiérrez, líder de desarrollo Front End en Banco Azteca. Portales internos para banca en React y Angular, con SonarQube en cero.">
+  <meta name="theme-color" content="#111111">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <script>document.documentElement.classList.add('js')</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
+<body>
 
-<body class="">
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-whatsapp" viewBox="0 0 24 24"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></symbol>
+  <symbol id="i-linkedin" viewBox="0 0 24 24"><path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></symbol>
+  <symbol id="i-instagram" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.72 3.72 0 0 1-1.38-.9 3.72 3.72 0 0 1-.9-1.38c-.16-.42-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16ZM12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63c-.79.3-1.46.72-2.12 1.38A5.86 5.86 0 0 0 .63 4.14C.33 4.9.13 5.78.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91.3.79.72 1.46 1.38 2.12a5.86 5.86 0 0 0 2.13 1.38c.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56a5.86 5.86 0 0 0 2.12-1.38 5.86 5.86 0 0 0 1.38-2.12c.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91a5.86 5.86 0 0 0-1.38-2.13A5.86 5.86 0 0 0 19.86.63C19.1.33 18.22.13 16.95.07 15.67.01 15.26 0 12 0Zm0 5.84a6.16 6.16 0 1 0 0 12.32 6.16 6.16 0 0 0 0-12.32ZM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8Zm6.4-11.85a1.44 1.44 0 1 0 0 2.88 1.44 1.44 0 0 0 0-2.88Z"/></symbol>
+</svg>
 
-  <!-- Add your content of header -->
-  <div class="background-color-layer" style="background-image: url('assets/images/fondo.webp')"></div>
-  <main class="content-wrapper">
-    <header class="white-text-container section-container">
-      <div class="text-center">
-        <h1>Edgar Jesús Mancilla Gutiérrez</h1>
-        <p>Desarrollador Web</p>
-
+<!-- Portada: el inspector que lee la página -->
+<header class="hero" id="inicio">
+  <div class="hero__left" data-inspectable>
+    <div class="hero__bar">
+      <a class="hero__name link" href="#inicio">Edgar Mancilla</a>
+    </div>
+    <div class="hero__copy">
+      <h1 class="hero__title lines">
+        <span class="line"><span data-line style="--i:0">Desarrollador Front End</span></span>
+        <span class="line"><span data-line style="--i:1"></span></span>
+      </h1>
+      <p class="hero__lead" data-rise style="--i:2">Soy Edgar Mancilla. He construido portales internos para Banco Azteca y Elektra en React y Angular, respetando los lineamientos de seguridad y optimización en cada entrega.</p>
+      <div class="hero__actions" data-rise style="--i:3">
+        <a class="button" href="#contacto">Contactar</a>
+        <a class="link link--light" href="#proyectos">Ver proyectos</a>
       </div>
-    </header>
+    </div>
+  </div>
 
+  <div class="hero__right">
+    <a class="hero__cv link link--light" target="_blank" href="Edgar_Mancilla_CV.pdf" download>Descargar CV</a>
+    <div class="inspector" data-ui aria-label="Inspector de elementos de la portada" role="region">
+      <div class="inspector__head">
+        <span class="inspector__name">Inspector</span>
+        <span class="inspector__target" data-read="tag">h1.hero__title</span>
+      </div>
+      <div class="inspector__tabs" role="group" aria-label="Elemento a inspeccionar">
+        <button type="button" data-pick=".hero__title" aria-pressed="true">Título</button>
+        <button type="button" data-pick=".hero__lead" aria-pressed="false">Texto</button>
+        <button type="button" data-pick=".hero .button" aria-pressed="false">Botón</button>
+      </div>
+      <dl class="inspector__rows" aria-live="polite">
+        <div><dt>Fuente</dt><dd data-read="font">Work Sans 300</dd></div>
+        <div><dt>Tamaño</dt><dd data-read="size">72px / 72px</dd></div>
+        <div><dt>Color</dt><dd><span class="swatch" data-read="color-swatch"></span><span data-read="color">#F4F4F4</span></dd></div>
+        <div><dt>Fondo</dt><dd><span class="swatch" data-read="bg-swatch"></span><span data-read="bg">#111111</span></dd></div>
+        <div><dt>Contraste</dt><dd><span data-read="ratio">17.4:1</span><span class="pill" data-read="grade">AAA</span></dd></div>
+        <div><dt>Caja</dt><dd data-read="box">560 × 144</dd></div>
+      </dl>
+      <p class="inspector__foot" data-read="hint">Pasa el cursor sobre la portada</p>
+    </div>
+  </div>
+  <div class="inspector-outline" data-ui aria-hidden="true"></div>
+</header>
 
+<main>
 
-    <!-- Add your site or app content here -->
+  <!-- Sobre mí: una carta -->
+  <section class="about wrap" id="sobre-mi" aria-labelledby="sobre-titulo">
+    <article class="letter">
+      <h2 class="letter__title" id="sobre-titulo" data-reveal style="--i:1">Sobre mí</h2>
+      <p data-reveal style="--i:2">Soy egresado de Ingeniería en Gestión y Desarrollo de Software por la UTSJR. Desde 2021 construyo sistemas web y desde 2023 lo hago para banca.</p>
+      <p data-reveal>Empecé en Dale Desarrollos con herramientas internas en Java y Python. En Afore Azteca pasé al Front End con Angular, y en Banco Azteca entré como desarrollador hasta que me asignaron el liderazgo del equipo.</p>
+      <p data-reveal>Trabajo sobre todo con React y Angular, pero lo que más cuido no se ve en pantalla: que cada proyecto salga de SonarQube y Checkmarx sin vulnerabilidades, con despliegues ordenados en GitLab, Jenkins y AWS.</p>
+      <p data-reveal>Integro herramientas de IA como Kiro y Claude de forma responsable: me ayudan a acelerar tareas repetitivas, pero nunca comparto información sensible y cada resultado lo reviso, lo pruebo y lo valido con los lineamientos de seguridad del grupo antes de entregarlo.</p>
+      <p class="letter__sign" data-reveal>Edgar Jesús Mancilla Gutiérrez</p>
+      <p class="letter__role">Desarrollador Front End, en Grupo Salinas</p>
+    </article>
+    <div class="terminal" data-ui data-reveal style="--i:1">
+      <div class="terminal__bar">
+        <span class="terminal__dots" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span class="terminal__title">edgar@portafolio</span>
+      </div>
+      <div class="terminal__screen" data-screen aria-live="polite">
+<pre><code><span class="t-prompt">edgar@portafolio:~$</span> whoami
+Edgar Jesús Mancilla Gutiérrez
+Desarrollador Front End, Grupo Salinas
+Tlalpan, Ciudad de México
 
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12">
+Escribe <span class="t-cmd">ayuda</span> para ver los comandos.</code></pre>
+      </div>
+      <form class="terminal__form" data-form>
+        <label class="terminal__prompt" for="cmd">edgar@portafolio:~$</label>
+        <input id="cmd" class="terminal__input" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="escribe un comando" aria-describedby="cmd-hint">
+      </form>
+      <div class="terminal__chips" id="cmd-hint" role="group" aria-label="Comandos sugeridos">
+        <button type="button" data-run="proyectos">proyectos</button>
+        <button type="button" data-run="stack">stack</button>
+        <button type="button" data-run="calidad">calidad</button>
+        <button type="button" data-run="ia">ia</button>
+        <button type="button" data-run="contacto">contacto</button>
+        <button type="button" data-run="limpiar">limpiar</button>
+      </div>
+    </div>
+  </section>
 
-          <div class="card">
-            <div class="card-block">
-              <h2>Sobre mi</h2>
-              <div class="row">
-                <div class="col-md-4">
-                  <p><img src="./assets/images/edgar.jpg" class="img-responsive" alt=""></p>
-                </div>
-                <div class="col-md-8">
+  <!-- Proyectos: línea del tiempo interactiva -->
+  <section class="tl" id="proyectos" aria-labelledby="proyectos-titulo">
+    <div class="tl__head">
+      <h2 class="section-title" id="proyectos-titulo" data-reveal>Proyectos</h2>
+      <p data-reveal style="--i:1">Recorre los años o elige una empresa o un proyecto para ver dónde he trabajado y qué construí en cada lugar.</p>
+    </div>
 
-                  <p>Titulado en Ingenieria en gestion y desarrollo de software, egresado de la Universidad Tecnologica
-                    de San Juan del Río (UTSJR).</p>
-                  <p> Mi pasión por la tecnología me ha llevado a estar constantemente aprendiendo y mejorando mis habilidades ya que el aprendizaje
-                    continuo es la clave para el éxito en este campo. Me siento cómodo explorando nuevas tecnologías y herramientas.</p>
+    <div class="tl__track" data-reveal style="--i:2">
+      <div class="tl__marks" data-marks role="group" aria-label="Proyectos"></div>
+      <div class="tl__bars" data-bars role="group" aria-label="Empresas"></div>
+      <div class="tl__years" data-years aria-hidden="true"></div>
+      <div class="tl__cursor" data-cursor aria-hidden="true"></div>
+    </div>
 
-                </div>
-              </div>
+    <div class="tl__scrub">
+      <button type="button" class="tl__step" data-step="-1" aria-label="Periodo anterior"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 6l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      <input type="range" data-range aria-label="Mover en el tiempo">
+      <button type="button" class="tl__step" data-step="1" aria-label="Periodo siguiente"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      <output data-when aria-live="polite"></output>
+    </div>
+
+    <div class="tl__detail" data-detail aria-live="polite">
+      <div class="tl__info">
+        <p class="tl__role" data-role></p>
+        <p class="tl__where" data-where></p>
+        <div class="tl__stack" data-stack></div>
+        <ul class="tl__acts" data-acts></ul>
+      </div>
+      <div class="tl__projects">
+        <h3>Proyectos en esta etapa</h3>
+        <div data-projects></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Demostraciones: piezas de los sistemas, para usarlas -->
+  <section class="demos wrap" id="demos" aria-labelledby="demos-titulo">
+    <div class="demos__intro">
+      <h2 class="section-title" id="demos-titulo" data-reveal>Pruébalos aquí</h2>
+      <p data-reveal style="--i:1">Cuatro piezas de esos sistemas, reconstruidas en este sitio con datos de ejemplo para que puedas usarlas. Las capturas son las pantallas reales, con los datos sensibles difuminados.</p>
+    </div>
+
+    <!-- Elektravales -->
+    <article class="demo" id="demo-elektravales" aria-labelledby="d1">
+      <div class="demo__text">
+        <h3 class="demo__title" id="d1" data-reveal>Migración de Elektravales</h3>
+        <p class="demo__meta" data-reveal>Banco Azteca, 2026</p>
+        <p data-reveal>Migración total del portal de Elektravales y Tarjetas de Regalo: tecnología, funcionamiento y diseño. Pasó de una versión antigua de Node y librerías sin soporte a versiones vigentes y más seguras, con componentes nuevos, modo oscuro y operaciones masivas.</p>
+        <figure class="demo__shot" data-reveal><img src="assets/proyectos/elektravales.webp" width="1897" height="915" alt="Captura real del portal Elektravales con folios y beneficiarios difuminados" loading="lazy" decoding="async"></figure>
+      </div>
+      <div class="demo__ui" data-reveal style="--i:1">
+        <div class="ui ui-table" data-ui data-demo="dispersiones">
+          <div class="ui__bar">
+            <span class="ui__title">Dispersiones <span class="ui__count nums" data-count>(6)</span></span>
+            <div class="ui-seg" role="group" aria-label="Filtrar por estatus">
+              <button type="button" data-filter="todos" aria-pressed="true">Todos</button>
+              <button type="button" data-filter="Disponible" aria-pressed="false">Disponible</button>
+              <button type="button" data-filter="Confirmado" aria-pressed="false">Confirmado</button>
             </div>
           </div>
-
-          <div class="card">
-            <div class="card-block">
-              <h2>Proyectos realizados</h2>
-              <div class="row">
-                <div class="col-md-4">
-                  <img src="./assets/images/moduloReporteria.jpg" class="img-responsive" alt="">
-                  <h3 class="h5">Módulo de reporteria</h3>
-                  <p>Este módulo permite al usuario el generar reportes de transacciones con origen de
-                    diferentes empresas (Elektra, Total Play, SuperAppBaz) y recibirlos con operaciones personalizadas
-                    desde el mismo módulo.
-                  </p>
-                </div>
-                <div class="col-md-4">
-                  <img src="./assets/images/moduloUsuarioUnico.jpg" class="img-responsive" alt="">
-                  <h3 class="h5">Módulo de Usuario Único</h3>
-                  <p>Nos permite el configurar datos del usuario que se registre desde la App correspondiente
-                    ya sea como los documentos o datos que no se hayan tomado correctamente desde la alta de usuario.
-                  </p>
-                </div>
-                <div class="col-md-4">
-                  <img src="./assets/images/moduloTM.jpg" class="img-responsive" alt="">
-                  <h3 class="h5">Portal Web "Tienda de monedas"</h3>
-                  <p>Desde este portal se pueden mandar configuraciones a un sdk, el cual se consume en una App
-                    móvil, esta App muestra lo que el usuario configure desde los diferentes módulos de portal.
-                  </p>
-                </div>
-              </div>
-            </div>
+          <table>
+            <thead><tr><th scope="col"><input type="checkbox" aria-label="Seleccionar todas" data-all></th><th scope="col">Folio</th><th scope="col" class="num">Monto</th><th scope="col">Vigencia</th><th scope="col">Estatus</th></tr></thead>
+            <tbody data-rows></tbody>
+          </table>
+          <div class="ui__foot">
+            <span data-selected>0 seleccionadas</span>
+            <button type="button" class="ui-btn ui-btn--danger" data-cancel disabled>Cancelación masiva</button>
           </div>
+        </div>
+      </div>
+    </article>
 
-          <div class="card">
-            <div class="card-block">
-              <h2>Experiencia</h2>
-              <div class="work-experience">
-                <small class="date"> Grupo Salinas (Banco Azteca) / Julio 2024 - Presente</small>
-                <h3 class="h5 date-title"> Líder de Desarrollo Front End</h3>
-
-
-                <p>
-                  Comencé como desarrollador en un equipo para la creación de sistemas web, mejorando, reduciendo
-                  vulnerabilidades y
-                  corrigiendo bugs en los sistemas, con el pasar del tiempo se me asigno el rol de líder del equipo.</p>
-                <p>
-                  ● Actividades:</p>
-                <p>- Desarrollo en React (JS)</p>
-                <p>- Reducción de Bugs y vulnerabilidades con SonarQube</p>
-                <p>- Consumo de APIs mediante Postman</p>
-                <p>- Uso de Jira para control de tareas y actividades</p>
-                <p>- Integración de API y servicios externos</p>
-                <p>- Control de AWS para despliegues a QA y Producción</p>
-                <p>- Consulta de contratos YAML con Swagger Editor</p>
-                <p>- Uso de Figma para UX del sistema a desarrollar</p>
-                </p>
-              </div>
-
-              <div class="work-experience">
-                <small class="date">Grupo Salinas (Afore Azteca) / Agosto 2023 - Julio 2024</small>
-                <h3 class="h5 date-title"> Desarrollador Front End</h3>
-
-                <p>
-                  Desarrollé y mantuve sistemas web para el Afore, optimizando procesos internos y mejorando la
-                  experiencia del usuario. Algunas
-                  de mis tareas destacadas en la posición fueron.</p>
-                <p>
-                  ● Actividades:</p>
-                <p>- Desarrollo de sistemas web utilizando Angular (TS) </p>
-                <p>- Integración de API y servicios externos. </p>
-                <p>- Optimización del rendimiento y la seguridad de las aplicaciones</p>
-                <p>- Pruebas de funcionalidad y corrección de errores en los sistemas. </p>
-                <p>- Uso de Jenkins para hacer deploy del sistema.</p>
-                <p>- Reducción de vulnerabilidades en Checkmarx.
-                </p>
-                </p>
-
-              </div>
-
-              <div class="work-experience">
-                <small class="date"> Dale Desarrollos / Noviembre 2021 - Junio 2023</small>
-                <h3 class="h5 date-title"> Desarrollador</h3>
-
-                <p>Participé en el desarrollo de proyectos pequeños en JavaSrcipt, Python y Java, para uso común de la
-                  empresa.</p>
-                <p>
-                  ● Actividades:</p>
-                <p>- Desarrollo de un control de inventario con Java</p>
-                <p>- Soporte y consultas en BD con MySQL</p>
-                <p>- Desarrollo de herramientas para la empresa en su día a día</p>
-                </p>
-
-              </div>
-            </div>
+    <!-- Tienda de monedas -->
+    <article class="demo demo--flip" id="demo-monedas" aria-labelledby="d2">
+      <div class="demo__text">
+        <h3 class="demo__title" id="d2" data-reveal>Tienda de Monedas</h3>
+        <p class="demo__meta" data-reveal>Banco Azteca, 2025</p>
+        <p data-reveal>Portal desde el que se configura la tienda de monedas de una app móvil. Sus módulos de catálogos, comisiones y conexión entre producto y canal envían la configuración a un SDK, y la app muestra lo que se definió en el portal.</p>
+        <figure class="demo__shot" data-reveal><img src="assets/proyectos/tienda-monedas.webp" width="1272" height="640" alt="Captura real del configurador de la tienda de monedas" loading="lazy" decoding="async"></figure>
+      </div>
+      <div class="demo__ui" data-reveal style="--i:1">
+        <div class="ui ui-config" data-ui data-demo="monedas">
+          <div class="ui__bar"><span class="ui__title">Configuración del canal</span></div>
+          <div class="ui-form">
+            <label>Moneda
+              <select data-field="moneda"><option value="USD">Dólar estadounidense</option><option value="EUR">Euro</option><option value="CAD">Dólar canadiense</option></select>
+            </label>
+            <label>Canal
+              <select data-field="canal"><option value="app">App móvil</option><option value="sucursal">Sucursal</option></select>
+            </label>
+            <label>Comisión <output class="nums" data-out="comision">1.5 %</output>
+              <input type="range" min="0" max="5" step="0.1" value="1.5" data-field="comision">
+            </label>
+            <label class="ui-check"><input type="checkbox" checked data-field="venta"> Permitir venta</label>
           </div>
-
-
-          <div class="card">
-            <div class="card-block">
-              <h2>Educación</h2>
-              <div class="row">
-                <div class="col-md-4">
-                  <div class="education-experience">
-                    <small class="date">2018-2020</small>
-                    <h3 class="h5 date-title">Tecnico Superior Universitario en Tecnologías de la Información</h3>
-                    <p>UTSJR</p>
-                  </div>
-
-                </div>
-                <div class="col-md-4">
-                  <div class="education-experience">
-                    <small class="date">2020-2022</small>
-                    <h3 class="h5 date-title">Ingenieria en Gestión y desarrollo de software</h3>
-                    <p>UTSJR</p>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div class="ui__code">
+            <span class="ui__label">Lo que recibe el SDK</span>
+<pre><code data-json></code></pre>
           </div>
+        </div>
+      </div>
+    </article>
 
-          <div class="card">
-            <div class="card-block">
-              <h2>Tecnologías utilizadas</h2>
-              <div class="row">
-                <div class="col-md-4">
-                  <div class="language-experience">
-                    <h3 class="h5">● <small>React</small></h3>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="language-experience">
-                    <h3 class="h5">● <small>Angular</small></h3>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="language-experience">
-                    <h3 class="h5">● <small>Angular Material</small></h3>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="language-experience">
-                    <h3 class="h5">● <small>primeNG</small></h3>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="language-experience">
-                    <h3 class="h5">● <small>Material UI</small></h3>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="language-experience">
-                    <h3 class="h5">● <small>TypeScript</small></h3>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="language-experience">
-                    <h3 class="h5">● <small>JavaSrcipt</small></h3>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="language-experience">
-                    <h3 class="h5">● <small>CSS</small></h3>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="language-experience">
-                    <h3 class="h5">● <small>HTML</small></h3>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="language-experience">
-                    <h3 class="h5">● <small>Bootstrap</small></h3>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="language-experience">
-                    <h3 class="h5">● <small>Jest</small></h3>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="language-experience">
-                    <h3 class="h5">● <small>EC2 de AWS</small></h3>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="language-experience">
-                    <h3 class="h5">● <small>Jenkins</small></h3>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="language-experience">
-                    <h3 class="h5">● <small>SonarQube</small></h3>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="language-experience">
-                    <h3 class="h5">● <small>Checkmarx</small></h3>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="language-experience">
-                    <h3 class="h5">● <small>Figma</small></h3>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="language-experience">
-                    <h3 class="h5">● <small>Postman</small></h3>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="language-experience">
-                    <h3 class="h5">● <small>Jira</small></h3>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="language-experience">
-                    <h3 class="h5">● <small>Taiga</small></h3>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="language-experience">
-                    <h3 class="h5">● <small>Swagger Editor</small></h3>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="language-experience">
-                    <h3 class="h5">● <small>Google Analytics</small></h3>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="language-experience">
-                    <h3 class="h5">● <small>Github</small></h3>
-                  </div>
-                </div><div class="col-md-4">
-                  <div class="language-experience">
-                    <h3 class="h5">● <small>Gitlab</small></h3>
-                  </div>
-                </div>
-
-              </div>
-            </div>
+    <!-- Usuario único -->
+    <article class="demo" id="demo-usuario" aria-labelledby="d3">
+      <div class="demo__text">
+        <h3 class="demo__title" id="d3" data-reveal>Usuario Único</h3>
+        <p class="demo__meta" data-reveal>Banco Azteca, 2024</p>
+        <p data-reveal>Herramienta interna para revisar y corregir a quien se registra desde la app. Desde una sola ficha se consultan datos, documentos, comentarios e historial, y se corrige lo que no se capturó bien en el alta.</p>
+        <figure class="demo__shot" data-reveal><img src="assets/proyectos/usuario-unico.webp" width="1058" height="670" alt="Captura real de la ficha de usuario con sus datos difuminados" loading="lazy" decoding="async"></figure>
+      </div>
+      <div class="demo__ui" data-reveal style="--i:1">
+        <div class="ui ui-user" data-ui data-demo="usuario">
+          <div class="ui__bar">
+            <span class="ui__title">Usuario 4127</span>
+            <span class="ui-badge" data-status>En revisión</span>
           </div>
-
-
-          <div class="card">
-            <div class="card-block">
-              <h2>Contacto</h2>
-              <div class="row">
-                <div class="col-md-3">
-                    <p>Correo: <a href="mailto:edgarjesus8@yahoo.com">edgarjesus8@yahoo.com</a></p>
-                </div>
-                <div class="col-md-3">
-                    <p>Teléfono: <a href="tel:+525632378049">56 3237 8049</a></p>
-                </div>
-                <div class="col-md-3">
-                    <p>Ubicación: <a href="https://www.google.com/maps/search/?q=Tlalpan,+CDMX" target="_blank">Tlalpan, CDMX</a></p>
-                </div>
-            </div>
-            </div>
+          <div class="ui-tabs" role="tablist" aria-label="Secciones del usuario">
+            <button type="button" role="tab" id="t-info" aria-controls="p-info" aria-selected="true">Información</button>
+            <button type="button" role="tab" id="t-docs" aria-controls="p-docs" aria-selected="false" tabindex="-1">Documentos</button>
+            <button type="button" role="tab" id="t-hist" aria-controls="p-hist" aria-selected="false" tabindex="-1">Historial</button>
           </div>
-
-          <div class="card">
-            <div class="card-block">
-              <h2>CV en formato PDF</h2>
-              <p>
-                <a href="assets/pdf/CVEdgarMancilla2025.pdf.pdf" target="_blank" download="Edgar_Mancilla_CV.pdf">Da
-                  clic aquí para visualizar y/o descargar mi CV en formato PDF</a>
-              </p>
-            </div>
+          <div class="ui-panel" role="tabpanel" id="p-info" aria-labelledby="t-info">
+            <dl class="ui-fields">
+              <div><dt>Nombre</dt><dd>Mariana Ruiz Ortega</dd></div>
+              <div><dt>Ocupación</dt><dd>Empleada privada</dd></div>
+              <div><dt>Nacionalidad</dt><dd>Mexicana</dd></div>
+              <div><dt>Nivel de riesgo</dt><dd>Bajo</dd></div>
+            </dl>
           </div>
+          <div class="ui-panel" role="tabpanel" id="p-docs" aria-labelledby="t-docs" hidden>
+            <ul class="ui-docs" role="list">
+              <li><span>INE, frente</span><span class="ui-badge ui-badge--ok">Validado</span></li>
+              <li><span>INE, reverso</span><span class="ui-badge ui-badge--warn" data-doc>Ilegible</span><button type="button" class="ui-btn" data-fix>Solicitar de nuevo</button></li>
+              <li><span>Comprobante de domicilio</span><span class="ui-badge ui-badge--ok">Validado</span></li>
+            </ul>
+          </div>
+          <div class="ui-panel" role="tabpanel" id="p-hist" aria-labelledby="t-hist" hidden>
+            <ol class="ui-hist" role="list" data-hist>
+              <li><span>Alta desde la app</span><span class="nums">13/08</span></li>
+              <li><span>Documento marcado como ilegible</span><span class="nums">14/08</span></li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </article>
 
+    <!-- Reportería -->
+    <article class="demo demo--flip" id="demo-reporteria" aria-labelledby="d4">
+      <div class="demo__text">
+        <h3 class="demo__title" id="d4" data-reveal>Reportería</h3>
+        <p class="demo__meta" data-reveal>Banco Azteca, 2024</p>
+        <p data-reveal>Módulo para generar reportes de transacciones de Elektra, Totalplay y SuperApp Baz desde un solo lugar. Cada reporte es automático o manual, se activa o se pausa con un interruptor y entrega operaciones personalizadas sin salir del módulo.</p>
+        <figure class="demo__shot" data-reveal><img src="assets/proyectos/reporteria.webp" width="1905" height="915" alt="Captura real del control de reportería con los nombres de reporte difuminados" loading="lazy" decoding="async"></figure>
+      </div>
+      <div class="demo__ui" data-reveal style="--i:1">
+        <div class="ui ui-reports" data-ui data-demo="reportes">
+          <div class="ui__bar">
+            <span class="ui__title">Reportes activos</span>
+            <span class="ui__count nums" data-active>3 de 4</span>
+          </div>
+          <div class="ui-seg ui-seg--full" role="group" aria-label="Tipo de reporte">
+            <button type="button" data-kind="auto" aria-pressed="true">Automáticos</button>
+            <button type="button" data-kind="manual" aria-pressed="false">Manuales</button>
+          </div>
+          <ul class="ui-switches" role="list" data-reports></ul>
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <!-- Calidad -->
+  <section class="quality wrap" id="calidad" aria-labelledby="calidad-titulo">
+    <div class="quality__grid">
+      <div class="quality__figures">
+        <h2 class="section-title" id="calidad-titulo" data-reveal>Calidad medible</h2>
+        <dl class="figures">
+          <div data-reveal><dt class="nums">0</dt><dd>bugs, code smells, vulnerabilidades, security hotspots y código duplicado al cierre de cada proyecto en SonarQube.</dd></div>
+          <div data-reveal style="--i:1"><dt class="nums">4</dt><dd>proyectos recientes con el análisis en cero, siguiendo los lineamientos de Grupo Salinas.</dd></div>
+          <div data-reveal style="--i:2"><dt class="nums">5</dt><dd>años construyendo sistemas web, desde noviembre de 2021.</dd></div>
+          <div data-reveal style="--i:3"><dt class="nums">28</dt><dd>herramientas en el trabajo de todos los días, de TypeScript a Kiro.</dd></div>
+        </dl>
+      </div>
+      <div class="quality__gate" data-reveal style="--i:2">
+        <div class="ui ui-gate" data-ui>
+          <div class="ui__bar">
+            <span class="ui__title">Quality Gate</span>
+            <span class="ui-badge ui-badge--ok">Aprobado</span>
+          </div>
+          <label class="ui-gate__pick">Proyecto
+            <select data-gate>
+              <option>Migración de Elektravales</option>
+              <option>Tienda de Monedas</option>
+              <option>Usuario Único</option>
+              <option>Reportería</option>
+            </select>
+          </label>
+          <dl class="ui-metrics">
+            <div><dt>Bugs</dt><dd class="nums">0</dd><dd class="grade">A</dd></div>
+            <div><dt>Vulnerabilidades</dt><dd class="nums">0</dd><dd class="grade">A</dd></div>
+            <div><dt>Code smells</dt><dd class="nums">0</dd><dd class="grade">A</dd></div>
+            <div><dt>Security hotspots</dt><dd class="nums">0</dd><dd class="grade">A</dd></div>
+            <div><dt>Duplicación</dt><dd class="nums">0.0 %</dd><dd class="grade">A</dd></div>
+          </dl>
         </div>
       </div>
     </div>
+  </section>
 
-  </main>
-  <footer class="footer-container white-text-container text-center">
-    <div class="container">
-      <div class="row">
+  <!-- Logros -->
+  <section class="wins wrap" id="logros" aria-labelledby="logros-titulo">
+    <div class="wins__head">
+      <h2 class="section-title" id="logros-titulo" data-reveal>Logros laborales</h2>
+      <p data-reveal style="--i:1">Lo que cambió en cada equipo después de mi trabajo, del inventario de una empresa a la entrega continua de un banco.</p>
+    </div>
+    <ul class="wins__list" role="list">
+      <li class="win">
+        <h3 class="win__title">CI/CD para el Front End</h3>
+        <p>Implementé el proceso de integración y despliegue continuo del sistema Front End.</p>
+        <p class="win__where">Banco Azteca</p>
+      </li>
+      <li class="win">
+        <h3 class="win__title">Migración de Elektravales en tiempo récord</h3>
+        <p>Migré el portal apoyándome en herramientas de IA, con la misma revisión y los mismos controles de calidad de siempre.</p>
+        <p class="win__where">Banco Azteca</p>
+      </li>
+      <li class="win">
+        <h3 class="win__title">Un portal Elektravales más seguro</h3>
+        <p>Reduje riesgos e implementé medidas para mejorar la seguridad del portal.</p>
+        <p class="win__where">Banco Azteca</p>
+      </li>
+      <li class="win">
+        <h3 class="win__title">Inventario automatizado</h3>
+        <p>Implementé un sistema de control automatizado para el inventario de equipo de cómputo y dispositivos móviles de la empresa.</p>
+        <p class="win__where">Dale Desarrollos</p>
+      </li>
+    </ul>
+  </section>
 
+  <!-- Trayectoria -->
+  <section class="path wrap" id="trayectoria" aria-labelledby="trayectoria-titulo">
+    <h2 class="section-title" id="trayectoria-titulo" data-reveal>Trayectoria</h2>
+    <div class="path__grid">
+      <div class="rows">
+        <p class="rows__group">Experiencia</p>
+        <p class="row"><span><b>Líder de Desarrollo Front End</b><br>Grupo Salinas, Banco Azteca</span><span class="nums">jul 2024 – hoy</span></p>
+        <p class="row"><span><b>Desarrollador Front End</b><br>Grupo Salinas, Afore Azteca</span><span class="nums">ago 2023 – jul 2024</span></p>
+        <p class="row"><span><b>Desarrollador</b><br>Dale Desarrollos</span><span class="nums">nov 2021 – jun 2023</span></p>
+        <p class="rows__group">Formación</p>
+        <p class="row"><span><b>Ingeniería en Gestión y Desarrollo de Software</b><br>UTSJR</span><span class="nums">2020 – 2022</span></p>
+        <p class="row"><span><b>T.S.U. en Tecnologías de la Información</b><br>UTSJR</span><span class="nums">2018 – 2020</span></p>
+        <p class="rows__group">Certificaciones</p>
+        <p class="row"><span>Google Cloud Computing</span><span>Google</span></p>
+        <p class="row"><span>SCRUM</span><span>Metodología</span></p>
+        <p class="row"><span>Testing de software desde cero</span><span>Calidad</span></p>
+        <p class="row"><span>CCNA Introduction to Networks</span><span>Cisco</span></p>
+        <p class="row"><span>CCNA Routing and Switching Essentials</span><span>Cisco</span></p>
+        <p class="row"><span>CCNA Security</span><span>Cisco</span></p>
+      </div>
+      <div class="rows">
+        <p class="rows__group">Stack</p>
+        <p class="row"><span><b>Interfaces</b><br>React, Angular, Material UI, Angular Material, PrimeNG, Bootstrap</span><span class="nums">6</span></p>
+        <p class="row"><span><b>Lenguajes</b><br>TypeScript, JavaScript, HTML, CSS, Java, Python</span><span class="nums">6</span></p>
+        <p class="row"><span><b>Calidad y pruebas</b><br>SonarQube, Checkmarx, Jest</span><span class="nums">3</span></p>
+        <p class="row"><span><b>Datos y APIs</b><br>Postman, Swagger, Firestore, MySQL, Google Analytics</span><span class="nums">5</span></p>
+        <p class="row"><span><b>Entrega</b><br>GitLab, GitHub, Jenkins, AWS EC2</span><span class="nums">4</span></p>
+        <p class="row"><span><b>Equipo e IA</b><br>Jira con Scrum, Figma, y Kiro y Claude como apoyo en desarrollo, con revisión humana</span><span class="nums">4</span></p>
+        <p class="rows__group">Habilidades</p>
+        <p class="row"><span>Liderazgo, proactividad, flexibilidad, aprendizaje autodidacta y solución de problemas</span><span class="nums">5</span></p>
       </div>
     </div>
-  </footer>
+  </section>
 
-  <script>
-    document.addEventListener("DOMContentLoaded", function (event) {
-      scrollRevelation('.card');
-    });
-  </script>
+  <!-- Contacto -->
+  <section class="contact wrap" id="contacto" aria-labelledby="contacto-titulo">
+    <p class="contact__sentence">"El aprendizaje continuo es la clave para el éxito en este campo"</p>
+    <div class="contact__links">
+      <h2 class="contact__title" id="contacto-titulo">¿Hablamos?</h2>
+      <a class="link link-plain" href="mailto:edgarjesus8@yahoo.com?subject=Hola%20Edgar%2C%20vi%20tu%20portafolio">edgarjesus8@yahoo.com</a>
+      <a class="link link-plain nums" href="tel:+525632378049">56 3237 8049</a>
+      <a class="wa-inline" href="https://wa.me/525632378049" target="_blank" rel="noopener" data-wa-open><svg width="20" height="20" aria-hidden="true"><use href="#i-whatsapp"/></svg><span>Escribir por WhatsApp</span></a>
+      <div class="social">
+        <a class="social__link" target="_blank" href="#" data-pendiente="linkedin" aria-label="LinkedIn de Edgar Mancilla"><svg width="22" height="22" aria-hidden="true"><use href="#i-linkedin"/></svg><span>LinkedIn</span></a>
+        <a class="social__link" target="_blank" href="#" data-pendiente="instagram" aria-label="Instagram de Edgar Mancilla"><svg width="22" height="22" aria-hidden="true"><use href="#i-instagram"/></svg><span>Instagram</span></a>
+      </div>
+      <p class="contact__city">Tlalpan, Ciudad de México</p>
+    </div>
+  </section>
 
-  <script type="text/javascript" src="./main.bc58148c.js"></script>
+</main>
+
+<footer class="footer wrap">
+  <span>Edgar Mancilla, Front End</span>
+  <nav class="footer__links" aria-label="Enlaces">
+    <a class="link" target="_blank" href="#" data-pendiente="instagram">Instagram</a>
+    <a class="link" target="_blank" href="#" data-pendiente="linkedin">LinkedIn</a>
+    <a class="link" target="_blank" href="Edgar_Mancilla_CV.pdf" download>CV en PDF</a>
+  </nav>
+  <span class="footer__year nums">© 2026</span>
+</footer>
+
+<!-- Asistente de WhatsApp: arma el mensaje y lo abre en WhatsApp -->
+<a class="wa-launcher" href="https://wa.me/525632378049" target="_blank" rel="noopener" data-wa-open data-ui aria-label="Escribir a Edgar por WhatsApp" aria-controls="wa-panel" aria-expanded="false">
+  <svg width="28" height="28" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+</a>
+<div class="wa" id="wa-panel" role="dialog" aria-modal="false" aria-labelledby="wa-title" data-ui hidden>
+  <div class="wa__head">
+    <span class="wa__avatar" aria-hidden="true"><svg width="20" height="20"><use href="#i-whatsapp"/></svg></span>
+    <div class="wa__who">
+      <p class="wa__title" id="wa-title">Edgar Mancilla</p>
+      <p class="wa__sub">Te respondo por WhatsApp</p>
+    </div>
+    <button type="button" class="wa__close" data-wa-close aria-label="Cerrar asistente">
+      <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+  <div class="wa__body" data-wa-log aria-live="polite"></div>
+  <div class="wa__foot" data-wa-controls></div>
+</div>
+
+<script src="main.js" defer></script>
 </body>
-
 </html>
